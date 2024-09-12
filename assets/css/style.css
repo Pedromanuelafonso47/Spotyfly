@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; Rolagem da página suaaaaaaaaaaaaaaaave*/
+  list-style: none; /* REMOVA OS ESTILOS DA LISTA "AS BOLINHAS DO UL"*/
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  max-height: 100dvh;
+  width: 100dvw;
+  background-color: var(--color1);
+}
+
+:root {
+  --color1: #eefcfa;
+  --color2: #008060;
+  --color3: #014c3e;
+  --color4: #177a75;
+  --color5: #757c7d;
+  --color6: #1e2324;
+}
+
+#navs-menu {
+  /* background-color: chartreuse; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+}
+
+#logo-menu {
+  /* background-color: #333333; */
+  /* width: 40dvw; */
+  display: flex;
+  gap: 1rem;
+}
+
+#logo-menu > img {
+  width: 150px;
+}
+
+.menu-info {
+  /* background-color: rgb(255, 127, 232); */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#info-login {
+  /* background-color: aqua; */
+}
+
+#menu {
+  /* background-color: burlywood; */
+  display: flex;
+  align-items: center;
+  padding: 0rem 3.5rem 0rem 3.5rem;
+  border: solid var(--color5);
+  border-width: 0.1rem 0 0.1rem 0;
+}
+
+#menu > p {
+  padding-right: 1rem;
+}
+
+#menu-after {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  gap: 1rem;
+  /* ANALISAR AQUI O ESPAÇO */
+  /* gap: 3rem; */
+}
+
+#menu-after::before {
+  content: "";
+  width: 0.1rem;
+  height: 60%;
+  background-color: var(--color5);
+}
+
+#main-content {
+  /* height: 60dvh; */
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  width: 35dvw;
+  height: 60dvh;
+  background-color: #014c3e;
+  justify-content: center;
+  gap: 1rem;
+  overflow-wrap: break-word;
+}
+
+#content > h1 {
+  font-size: 3rem;
+  text-wrap: wrap;
+}
+
+#content > p {
+  width: 50%;
+  text-align: justify;
+}
+
+#content > button {
+  width: 25%;
+}
+#mask-image {
+  background-color: brown;
+  width: fit-content;
+}
+
+#circle {
+  width: 500px;
+  height: 500px;
+  background-color: var(--color4);
+  border-radius: 50%;
+}
+#cards-info {
+  display: flex;
+  height: auto;
+}
